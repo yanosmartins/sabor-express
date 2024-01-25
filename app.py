@@ -1,3 +1,6 @@
+import os #importando esta biblioteca. Não precisei baixar nada, apenas puxei
+
+os.system('cls') #aqui eu estou puxando um recurso desta biblioteca "os".
 print("""
 ░██████╗░█████╗░██████╗░░█████╗░██████╗░  ███████╗██╗░░██╗██████╗░██████╗░███████╗░██████╗░██████╗
 ██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗  ██╔════╝╚██╗██╔╝██╔══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
@@ -15,6 +18,10 @@ opcao_escolhida = int(input('Escolha uma opção: '))
 # opcao_escolhida = int(opcao_escolhida)
 print(f'Você escolheu a opção {opcao_escolhida}.')
 
+def finalizar_app():  #aqui estou definindo uma funçaõ. o "def" é como escrever "function" no javascript
+    os.system('cls') #aqui eu estou puxando um recurso desta biblioteca "os".
+    print('Encerrando o programa...\n')
+
 if opcao_escolhida == 1:
     print('Cadastrar restaurante')
 elif opcao_escolhida == 2:
@@ -22,4 +29,4 @@ elif opcao_escolhida == 2:
 elif opcao_escolhida == 3:
     print('Ativar restaurante')
 else:
-    print('Encerrando o programa...')
+    finalizar_app()
